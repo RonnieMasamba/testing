@@ -12,7 +12,6 @@ public class BookingManager {
     }
     public boolean checkAvailbility(String roomName)throws SQLException{
         List<String>roomsAvailable =hotelDao.fetchAvailableRooms();
-
         return roomsAvailable.contains(roomName);
     }
 }
